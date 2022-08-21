@@ -7,7 +7,7 @@ MAINTAINER  wtoorren
 RUN apt-get update; apt-get clean
 
 # Install and run apache
-RUN apt-get install -y apache2 vim wget && apt-get clean
+RUN apt-get install -y apache2 vim wget  apt-utils
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get -y install tzdata curl
 RUN apt-get install -y php git
