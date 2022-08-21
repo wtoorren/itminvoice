@@ -4,7 +4,7 @@ FROM ubuntu
 MAINTAINER  wtoorren
 
 # Update the repository sources list
-RUN apt-get update
+RUN apt-get update; apt-get clean
 
 # Install and run apache
 RUN apt-get install -y apache2 vim wget && apt-get clean
