@@ -19,6 +19,7 @@ RUN apt-get clean
 
 RUN git clone https://github.com/SolidInvoice/SolidInvoice.git /data/SolidInvoice
 RUN curl -o /data/SolidInvoice/composer.phar http://getcomposer.org/installer
+
 RUN php composer.phar --no-plugins allow-plugins.symfony/flex true
 #RUN php composer.phar --no-plugins allow-plugins.phpstan/extension-installer
 RUN php composer.phar require symfony/flex --no-plugins --no-scripts
