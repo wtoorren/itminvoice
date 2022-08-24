@@ -29,6 +29,7 @@ RUN php composer.phar require symfony/flex --no-plugins --no-scripts
 #RUN rm -fr /data/SolidInvoice /data/SolidInvoice/node_modules package-lock.json
 #RUN npm install --silent
 #RUN ln -s 
+
 EXPOSE 80
 COPY vhosts.soi.conf /etc/apache2/sites-available/000-default.conf
 COPY dir.conf /etc/apache2/mods-enabled/dir.conf
