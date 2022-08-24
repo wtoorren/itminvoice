@@ -16,7 +16,7 @@ jobs:
     - name: Build the Docker image
       uses: mr-smithers-excellent/docker-build-push@v4
       with:
-        image: wtoorren/woutertest
+        image: wtoorren/woutertest:latest
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
